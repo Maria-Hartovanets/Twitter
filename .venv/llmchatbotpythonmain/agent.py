@@ -19,13 +19,13 @@ tools = [
         ),
     Tool.from_function(
         name="Vector Search Index",
-        description="Provides information about movie plots using Vector Search",
+        description="Provides information about users names using Vector Search",
         func = kg_qa,
         return_direct=True
     ),
     Tool.from_function(
         name="Graph Cypher QA Chain",  # (1)
-        description="Provides information about Movies including their Actors, Directors and User reviews", # (2)
+        description="Provides information about Tweets including their Tweets, User", # (2)
         func = cypher_qa, # (3)
         return_direct=True
     ),
